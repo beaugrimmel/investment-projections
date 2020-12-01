@@ -54,7 +54,7 @@ ending_values = simulation_df.values[-1].tolist()
 ending_values.sort()
 final_median_val = ending_values[num_simulations//2]
 
-# Withdrals
+# Withdrawals
 simulation_df_with = pd.DataFrame()
 
 for simulation in range(num_simulations):
@@ -95,7 +95,7 @@ ax3.set_xticklabels(['{:,}'.format(int(x)) for x in ax3.get_xticks().tolist()])
 plt.xticks(rotation=45)
 ax3.set_title('Ending Balances')
 
-# Create plots for pdf withdrawl
+# Create plots for pdf withdrawals
 fig4, ax4 = plt.subplots(nrows=1, ncols=1)
 fig5, ax5 = plt.subplots(nrows=1, ncols=1)
 fig6, ax6 = plt.subplots(nrows=1, ncols=1)
